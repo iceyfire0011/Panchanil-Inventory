@@ -1,4 +1,4 @@
-package com.ERP.Inventory.Repository;
+package com.ERP.Inventory.IRepository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;

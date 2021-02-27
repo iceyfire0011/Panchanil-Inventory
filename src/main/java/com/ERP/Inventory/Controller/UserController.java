@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ERP.Inventory.API.Constant.PropertyConstants;
+import com.ERP.Inventory.IRepository.IUserRepository;
 import com.ERP.Inventory.Model.User;
-import com.ERP.Inventory.Repository.IUserRepository;
 import com.ERP.Inventory.config.ObjectToJson;
+import com.ERP.Inventory.config.constant.PropertyConstants;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 

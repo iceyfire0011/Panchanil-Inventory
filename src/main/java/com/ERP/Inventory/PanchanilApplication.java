@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
-import com.ERP.Inventory.API.Constant.PropertyConstants;
 import com.ERP.Inventory.Model.User;
+import com.ERP.Inventory.config.constant.PropertyConstants;
 
 @SpringBootApplication
 @EnableAutoConfiguration

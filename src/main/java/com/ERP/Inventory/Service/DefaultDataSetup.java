@@ -1,4 +1,4 @@
-package com.ERP.Inventory.config;
+package com.ERP.Inventory.Service;
 
 import java.util.List;
 import java.util.Calendar;
@@ -10,15 +10,15 @@ import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ERP.Inventory.API.Constant.PropertyConstants;
+import com.ERP.Inventory.IRepository.IAuthenticationRepository;
+import com.ERP.Inventory.IRepository.IDepartmentRepository;
+import com.ERP.Inventory.IRepository.IEmployeeRepository;
+import com.ERP.Inventory.IRepository.IUserRepository;
 import com.ERP.Inventory.Model.Authentication;
 import com.ERP.Inventory.Model.Department;
 import com.ERP.Inventory.Model.Employee;
 import com.ERP.Inventory.Model.User;
-import com.ERP.Inventory.Repository.IAuthenticationRepository;
-import com.ERP.Inventory.Repository.IDepartmentRepository;
-import com.ERP.Inventory.Repository.IEmployeeRepository;
-import com.ERP.Inventory.Repository.IUserRepository;
+import com.ERP.Inventory.config.constant.PropertyConstants;
 
 @Service
 public class DefaultDataSetup {

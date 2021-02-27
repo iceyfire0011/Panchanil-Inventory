@@ -1,4 +1,4 @@
-package com.ERP.Inventory.API.Constant;
+package com.ERP.Inventory.config.constant;
 
 import com.ERP.Inventory.config.constantEnums.ActiveStatus;
 import com.ERP.Inventory.config.constantEnums.Months;
