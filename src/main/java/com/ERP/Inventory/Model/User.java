@@ -21,7 +21,8 @@ import com.ERP.Inventory.config.ObjectToJson;
 
 import lombok.Data;
 
-@Document(collection = "users") @Data
+@Document(collection = "users") 
+@Data
 public class User {
 
 	@Id

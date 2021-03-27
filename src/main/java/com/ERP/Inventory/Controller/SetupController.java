@@ -14,7 +14,7 @@ public class SetupController {
 
 	@GetMapping("/setup")
 	public String login() {
-		return defaultDataSetup.userSetup().getMessage();
+		return defaultDataSetup.projectConfigSetup().getMessage();
 	}
 	
 	public SetupController() {

@@ -1,0 +1,51 @@
+{
+	"config": {
+		"authentication": [
+			{
+				"status": 1,
+				"createdBy": "system",
+				"modifyedBy": "system"
+			},
+			{
+				"status": 0,
+				"createdBy": "system",
+				"modifyedBy": "system"
+			}
+		],
+		"department": {
+			"departmentName": "Master",
+			"location": "Dhaka",
+			"employees": [
+				{
+					"employee": {
+						"role": 0,
+						"designation": "Super Admin",
+						"user": {
+							"firstName": "Mr.",
+							"lastName": "SuperAdmin",
+							"userType": 1,
+							"phoneNo": [
+								"+8801931250325"
+							],
+							"Address": [
+								"Shyamoli, Dhaka"
+							],
+							"DateOfBirth": {
+								"$date": "1991-06-01T16:06:58.509Z"
+							},
+							"Authentiction": {
+								"_id": {
+									"$oid": "603bbfa2f4e9bf4cf47e2f91"
+								},
+								"status": 1,
+								"createdBy": "system",
+								"modifyedBy": "system"
+							},
+							"email": "s.m.abdulwassae@gmail.com"
+						}
+					}
+				}
+			]
+		}
+	}
+}

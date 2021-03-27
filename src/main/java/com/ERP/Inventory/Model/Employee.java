@@ -1,11 +1,14 @@
 package com.ERP.Inventory.Model;
 
+import java.util.List;
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.ERP.Inventory.config.ObjectToJson;
@@ -19,13 +22,14 @@ public class Employee {
 	private String id;
 	@NotNull @NotBlank @NotEmpty
 	private String employeeCode;
-	@NotNull @NotBlank @NotEmpty
-	private int role;
+	@DBRef
+	private List<Role> roles;
 	private String designation;
 	@NotNull @NotBlank @NotEmpty
 	private String username;
 	@NotNull @NotBlank @NotEmpty
 	private String password;
+	@DBRef
 	private User user;
 
 	@Override
