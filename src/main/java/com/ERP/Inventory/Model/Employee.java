@@ -21,16 +21,20 @@ public class Employee {
 	@Id
 	private String id;
 	@NotNull @NotBlank @NotEmpty
-	private String employeeCode;
+	private String EmployeeCode;
 	@DBRef
-	private List<Role> roles;
-	private String designation;
+	private List<Role> Roles;
+	private String Designation;
 	@NotNull @NotBlank @NotEmpty
-	private String username;
+	private String Username;
 	@NotNull @NotBlank @NotEmpty
-	private String password;
+	private String Password;
 	@DBRef
-	private User user;
+	private User User;
+	private List<Department> Departments;
+	private List<Permission> Permissions;
+	@NotNull(message = "Authentication cannot be null")
+	private Authentication Authentiction;	
 
 	@Override
 	public String toString() {

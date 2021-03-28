@@ -2,6 +2,8 @@ package com.ERP.Inventory.Model;
 
 import java.util.List;
 
+import javax.validation.constraints.NotNull;
+
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
@@ -16,10 +18,10 @@ public class Department {
 
 	@Id
 	private String id;
-	private String departmentName;
-	private String location;
-	@DBRef
-	private List<Employee> employees;
+	private String DepartmentName;
+	private String Location;
+	@NotNull(message = "Authentication cannot be null")
+	private Authentication Authentiction;
 
 	public Department() {
 		id = new ObjectId().toString();

@@ -28,13 +28,13 @@ public class User {
 	@Id
 	private String id;
 	@NotNull(message = "firstName cannot be null")
-	private String firstName;
+	private String FirstName;
 	@NotNull(message = "lastName cannot be null")
-	private String lastName;
+	private String LastName;
 	@NotNull(message = "userType cannot be null")
-	private int userType;
+	private int UserType;
 	@NotNull(message = "phoneNo cannot be null")
-	private String phoneNo[];
+	private String PhoneNo[];
 	@NotNull(message = "Address cannot be null")
 	private String Address[];
 	private String Avatar;
@@ -42,7 +42,7 @@ public class User {
 	private Date DateOfBirth;
 	@NotNull(message = "Authentication cannot be null")
 	private Authentication Authentiction;
-	private String email;
+	private String Email;
 
 	public User() {
 		id = new ObjectId().toString();
