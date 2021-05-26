@@ -80,7 +80,7 @@ public class DefaultDataSetup {
 		dob.setTime(cal.getTimeInMillis());
 
 		String poneNo[] = { "+8801931250325" };
-		String adress[] = { "Shyamoli, Dhaka" };
+		String address[] = { "Shyamoli, Dhaka" };
 
 		Authentication activeAuthProperties = new Authentication() {
 			{
@@ -108,7 +108,7 @@ public class DefaultDataSetup {
 				setLastName("SuperAdmin");
 				setUserType(PropertyConstants.EMPLOYEE);
 				setPhoneNo(poneNo);
-				setAddress(adress);
+				setAddress(address);
 				setDateOfBirth(dob);
 				setEmail("s.m.abdulwassae@gmail.com");
 				setAuthentiction(activeAuthProperties);

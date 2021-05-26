@@ -11,13 +11,18 @@ public final class PropertyConstants {
 	// user
 	public static final String FIRSTNAME = "MD.";
 	public static final String LASTNAME = "Super Admin";
-	public static final String SUPERUSERNAME = "superadmin";
+	public static final String SUPER_USERNAME = "superadmin";
 	public static final String PASSWORD = "1234";
-	public static final int ACTIVE = ActiveStatus.ACTIVE.getValue(); // Authorization status
-	public static final int INACTIVE = ActiveStatus.INACTIVE.getValue(); // Authorization status
-	public static final String PHONENO = "01931250325";
-	public static final String PRESENTADDRESS = "Shyamoly, Dhaka";
-	public static final String PERMANENTADDRESS = "Mirpur, Dhaka";
+	public static final String PHONE_NO = "01931250325";
+	public static final String PRESENT_ADDRESS = "Shyamoly, Dhaka";
+	public static final String PERMANENT_ADDRESS = "Mirpur, Dhaka";
+
+	//Authorization status
+	public static final int ACTIVE = ActiveStatus.ACTIVE.getValue();
+	public static final int INACTIVE = ActiveStatus.INACTIVE.getValue();
+	public static final int APPROVED = ActiveStatus.APPROVED.getValue();
+	public static final int DELETED = ActiveStatus.DELETED.getValue();
+	public static final int REJECTED = ActiveStatus.REJECTED.getValue();
 
 	// user types
 	public static final int EMPLOYEE = UserType.EMPLOYEE.getValue();
@@ -25,7 +30,7 @@ public final class PropertyConstants {
 	public static final int SUPPLIER = UserType.SUPPLIER.getValue();
 
 	// user roles
-	public static final int SUPERADMIN = Roles.SUPERADMIN.getValue();
+	public static final int SUPER_ADMIN = Roles.SUPER_ADMIN.getValue();
 	public static final int ADMIN = Roles.ADMIN.getValue();
 	public static final int MANAGER = Roles.MANAGER.getValue();
 	public static final int STAFF = Roles.STAFF.getValue();

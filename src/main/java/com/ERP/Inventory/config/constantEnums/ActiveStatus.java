@@ -4,7 +4,7 @@ import lombok.Getter;
 
 public enum ActiveStatus {
 
-		ACTIVE(1), INACTIVE(0);
+	ACTIVE(1), APPROVED(4), DELETED(2), INACTIVE(3), REJECTED(5);
 
 	@Getter
 	private final int value;
